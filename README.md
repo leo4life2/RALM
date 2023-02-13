@@ -13,7 +13,13 @@ Based on
 2. `source venv/bin/activate`
 3. `pip install -r requirements.txt`
 
-### 2. Create markdown file for context fetching
+### 2. Set up environment variables
+
+```
+export OPENAI_API_KEY=YOUR_OPENAI_API_KEY
+```
+
+### 3. Create markdown file for context fetching
 
 Look at `data/markdown/froofy_hugger.md` or `data/markdown/olympics.md` for examples.
 The markdown file MUST have the following structure:
@@ -30,13 +36,13 @@ Paragraph
 
 In short, the markdown file must have `##` headers and `###` subheaders. Text MUST be a single paragraph, and must be under a `###` subheader.
 
-### 3. Create context csv file
+### 4. Create context csv file
 
 ```bash
 python3 md_to_csv.py data/markdown/YOUR_MD_FILE.md OUTPUT_CSV_FILE.csv
 ```
 
-### 4. Run RA-complete code
+### 5. Run RA-complete code
 
 ```bash
 python3 retrieval_augmented_complete.py CSV_FILE.csv "YOUR_PROMPT_HERE"
