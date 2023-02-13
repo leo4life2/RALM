@@ -52,3 +52,4 @@ python3 retrieval_augmented_complete.py CSV_FILE.csv "YOUR_PROMPT_HERE"
 
 - reduce_long simply truncates the text, which is not ideal. Could potentially improve this by summarizing long paragraphs.
 - prompt engineering: refer to the leaked bing chatbot prompts as guidlines
+- need a vector DB for longer contexts.
