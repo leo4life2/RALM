@@ -1,4 +1,4 @@
-# RALM
+# RALM (Retrieval Augmented Language Model)
 
 Based on
 
